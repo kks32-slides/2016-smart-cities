@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Data, sensing and smart cities</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Section -->
+            <section>
+                <h2>Data analytics, sensing and visualisation for smart cities</h2>
+                <p>
+                    <br/>
+                    Krishna Kumar, <a href="mailto:kks32@cam.ac.uk">kks32@cam.ac.uk</a>
+                    <br/>
+                    Department of Engineering, University of Cambridge
+                </p>
+                <br/>
+                <div style="float: left; width: 100%;">
+                    <span style="float: left; width: 33%; text-align: center;">
+                      <img style="border:0;" src="images/themes/cued.png" width="100%">
+                    </span>
+                    <span style="float: left; width: 33%; text-align: center;">
+                      <img style="border:0;" src="images/themes/cb-geo-text-white.png" width="100%">
+                    </span>
+                    <span style="float: right; width: 33%; text-align: center;">
+                      <img style="border:0;" src="images/themes/csd.png" width="100%">
+                    </span>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <section>
+                <h2>National infrastructure plan</h2>
+                <ul>
+                    <li><strong>£466B</strong> for the next generation of infrastructure by 2020.</li>
+                </ul>
+                <blockquote>High quality infrastructure</blockquote>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>
