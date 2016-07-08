@@ -312,8 +312,187 @@
                     <img src="images/lbs-noise.png" width="70%">
                 </section>
             </section>
-            
+
             <!-- Data analytics -->
+            <section>
+                <section>
+                    <h2>Smart city</h2>
+                    <img src="images/smart-city.png" width="100%">
+                </section>
+
+                <section>
+                    <h2>Smart (monitoring complex) infrastructure</h2>
+                    <img src="images/complex-infrastructure.png" width="100%">
+                </section>
+
+                <!-- Querries -->
+                <section>
+                    <h2>Queries</h2>
+                    <p>
+                        <ul>
+                            <li>At London Bridge Arch E951 area, has there been a black alarm triggered during the piles constructed 12.13-01.14?</li>
+                            <li>Is there a crack opening greater than 5mm in the arches, when the settlement values reached 50mm?</li>
+                            <li>What is the maximum displacement observed during tunneling (or other construction activity) within x meters from the pile.</li>
+                            <li>Number of data readings required for a strain profile – within a tolerance of X?</li>
+                            <li>Effect of analyzer X on scatter / noise in soil layer Y</li>
+                        </ul>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Queries: Big, Fast and Rich</h2>
+                    <img style="border:0;" src="images/queries.png" width="50%">
+                </section>
+
+                <!-- Relational DB -->
+                <section>
+                    <h2>Relational database</h2>
+                    <img style="border:0;" src="images/rdbms.png" width="100%">
+                    <p>Humidity? Vibration? 3D point cloud data? …</p>
+                </section>
+                <section>
+                    <h3>PostGIS</h3>
+                    <ul>
+                        <li><strong>Geographic objects</strong> to the PostgreSQL object-relational database</li>
+                        <li><strong>Geometry types</strong> for Points, LineStrings, Polygons, MultiPoints, MultiLineStrings, MultipPolygons and GeometryCollections.</li>
+                        <li>Spatial operators for determining <strong>geospatial measurements</strong> like area, distance, length and perimeter.</li>
+                        <li>Spatial operators for determining <strong>geospatial set operations</strong>, like union, difference, symmetric difference and buffers (provided by GEOS).</li>
+                    </ul>
+                    <pre>v.to.db map=roads option=length type=line col=linelength units=me</pre>
+                </section>
+
+                <!-- Spatio Temporal Query -->
+                <section>
+                    <h2>Spatio-Temporal Query</h2>
+                    <div style="float: left; width: 70%">
+                        <ul>
+                            <li>Semantic analytics tools have primarily focused on thematic relationships, but spatial and temporal relationships are often critical components in analytical domains.</li>
+                            <li>Current GIS and spatial database technology does not support complex thematic analytics operations.</li>
+                            <ul>
+                                <li>GIS - modelling and analysing spatial and temporal relationships</li>
+                                <li>Thematic entities and their relationships are not explicitly and independently represented, making analysis of these relationships difficult.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div style="float: right; width: 25%">
+                        <img style="border:0;" src="images/spatio-temporal.png" width="100%">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>CityGML</h2>
+                    <ul>
+                        <li>Open data model and an XML-based format for the storage and exchange of data.</li>
+                        <li>Common information model for the representation of sets of 3D urban objects</li>
+                    </ul>
+                    <img style="border:0;" src="images/citygml.png" width="70%">
+                </section>
+
+                <section>
+                    <h2>CityGML</h2>
+                    <pre>
+                        <code class="hlxml" data-trim>
+                        <frn:CityFurniture>
+                        <frn:class codeSpace="http://www.sig3d.org/codelists/standard/cityfurniture/2.0/CityFurniture_class.xml">1000</frn:class>
+                        <frn:function codeSpace="http://www.sig3d.org/codelists/standard/cityfurniture/2.0/CityFurniture_function.xml">1080</frn:function>
+                        <frn:lod2ImplicitRepresentation>
+                          <core:ImplicitGeometry>
+                          <core:mimeType>model/vrml</core:mimeType>
+                          <core:libraryObject>
+                            http://www.some-3d-library.com/3D/furnitures/Sensor434.wrl
+                          </core:libraryObject>
+                          <core:referencePoint>
+                            <gml:Point srsName="urn:ogc:def:crs,crs:EPSG:6.12:31467,crs:EPSG:6.12:5783">
+                              <gml:pos srsDimension="3">5793898.77 3603845.54 44.8</gml:pos>
+                            </gml:Point>
+                          </core:referencePoint>
+                        </core:ImplicitGeometry>
+                      </frn:lod2ImplicitRepresentation>
+                      </frn:CityFurniture>
+                      </code>
+                  </pre>
+                </section>
+
+                <section>
+                    <h2>Building Information Modelling</h2>
+                    <img src="images/bim.png" width="80%">
+                </section>
+
+                <section>
+                    <h2>Industry Foundation Class</h2>
+                    <pre>
+                       <code class="html" data-trim>
+                       <IfcCartesianPoint id="i1001">
+                       <Coordinates ex:cType="list">
+                       <IfcLengthMeasure pos="0">100.0</IfcLengthMeasure>
+                       <IfcLengthMeasure pos="1">100.0</IfcLengthMeasure>
+                       <IfcLengthMeasure pos="2">100.0</IfcLengthMeasure>
+                       </Coordinates>
+                       </IfcCartesianPoint>
+                       </code>
+                  </pre>
+                </section>
+
+                <!-- Smart cities standard -->
+                <section>
+                    <h2>Smart cities standard</h2>
+                    <ul>
+                        <li>Smart cities standard (PAS 182) offers a handful of generic concepts (such as place, observation, metric etc.) to formulate a common language for linking data across organizations in a city.</li>
+                        <li>The main goal is to seamlessly integrate information from multiple organisations using <strong>Linked Data (Semantic Web technology)</strong> that can be shared and edited.</li>
+                        <li>Different from BIM, Smart Cities allow for the sharing of critical but less tangible aspects that relate to the data: such as related Assumptions and Objectives.</li>
+                    </ul>
+                </section>
+
+                <section>
+                  <h2>Linked Data - Semantic Web</h2>
+                  <img src="images/linked-data.png" width="80%">
+                </section>
+
+                <section>
+                  <h2>Linked Data - example</h2>
+                  <img src="images/bristol-airpollution.png" width="80%">
+                </section>
+
+                <section>
+                  <h2>Resource Description Framework</h2>
+                  <pre>
+                    <code class="hshtml">
+                    <div vocab="http://schema.org/" typeof="Sensor">
+                      <span property="name">Utterberry</span> measures
+                      <span property="sensorFunction" typeof="Measurement" href="http://www.sensor-data.org/entity/Q1731">
+                        <span property="type">Displacement</span>.
+                      </span>
+                    </div>
+                    </code>
+                  </pre>
+                  <img src="images/linked-data-sensors.png" width="80%">
+                </section>
+
+                <section>
+                  <h2>Linked Data - Concept model</h2>
+                  <img src="images/lbs-concept.png" width="80%">
+                </section>
+
+                <section>
+                  <h2>Linked Data - Time Slices</h2>
+                  <img src="images/linked-data-timeslices.png" width="80%">
+                </section>
+
+                <section>
+                  <h2>Temporal RDF</h2>
+                  <img src="images/temporal-rdf.png" width="80%">
+                  <p>Temporal RDF extends the RDF statement from a triple to a quad where the fourth element is the valid time of the RDF statement</p>
+                </section>
+
+                <!-- Graph Processing -->
+                <section>
+                  <h2>Graph processing</h2>
+                  <img src="images/graph-processing.png" width="80%">
+                </section>
+                <section>
+                  <h2>Graph optimisation</h2>
+                  <img src="images/graph-optimisation.png" width="50%">
+                </section>
         </div>
     </div>
 
